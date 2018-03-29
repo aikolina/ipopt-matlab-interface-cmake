@@ -6,9 +6,11 @@ For this reason, this repo contains a copy of the [mexIPOPT](https://github.com/
 
 ## Installation 
 Build this project as any CMake-based project, for example on \*nix system :
-~~~
+~~~bash
 git clone https://github.com/traversaro/ipopt-matlab-interface-cmake
 cd ipopt-matlab-interface-cmake
+mkdir build
+cd build
 # Enable the IPOPT_USES_MATLAB and IPOPT_USES_OCTAVE depending if MATLAB or Octave is available 
 cmake -DCMAKE_INSTALL_PREFIX=./install -DIPOPT_USES_MATLAB=ON -DIPOPT_USES_OCTAVE=ON ..
 cmake --build . 
